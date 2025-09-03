@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Predictor</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Clothing Accuracy Predictor 👕👗</h1>
+        <form id="predictForm">
+            <!-- Occasion -->
+            <label>Occasion:</label>
+            <select id="occasion">
+                <option value="party">Party</option>
+                <option value="business-meeting">Business Meeting</option>
+                <option value="wedding">Wedding</option>
+                <option value="casual">Casual</option>
+                <option value="sports">Sports</option>
+            </select>
+
+            <!-- Top -->
+            <label>Top:</label>
+            <select id="top">
+                <option value="t-shirt">T-Shirt</option>
+                <option value="dress-shirt">Dress Shirt</option>
+                <option value="sweater">Sweater</option>
+                <option value="hoodie">Hoodie</option>
+                <option value="tank-top">Tank Top</option>
+                <option value="blouse">Blouse</option>
+            </select>
+
+            <!-- Bottom -->
+            <label>Bottom:</label>
+            <select id="bottom">
+                <option value="jeans">Jeans</option>
+                <option value="trousers">Trousers</option>
+                <option value="shorts">Shorts</option>
+                <option value="skirt">Skirt</option>
+                <option value="leggings">Leggings</option>
+            </select>
+
+            <!-- Shoes -->
+            <label>Shoes:</label>
+            <select id="shoes">
+                <option value="sneakers">Sneakers</option>
+                <option value="loafers">Loafers</option>
+                <option value="sandals">Sandals</option>
+                <option value="boots">Boots</option>
+                <option value="heels">Heels</option>
+            </select>
+
+            <!-- Weather -->
+            <label>Weather:</label>
+            <select id="weather">
+                <option value="sunny-hot">Sunny Hot</option>
+                <option value="sunny-mild">Sunny Mild</option>
+                <option value="cold">Cold</option>
+                <option value="rainy">Rainy</option>
+                <option value="snowy">Snowy</option>
+            </select>
+
+            <!-- Colors -->
+            <label>Colors:</label>
+            <select id="colors">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="navy">Navy</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="pink">Pink</option>
+                <option value="gray">Gray</option>
+            </select>
+
+            <!-- Accessories -->
+            <label>Accessories:</label>
+            <select id="accessories">
+                <option value="">None</option>
+                <option value="watch">Watch</option>
+                <option value="hat">Hat</option>
+                <option value="belt">Belt</option>
+                <option value="scarf">Scarf</option>
+                <option value="necklace">Necklace</option>
+                <option value="bracelet">Bracelet</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
